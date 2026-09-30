@@ -47,8 +47,6 @@ All models live in the `models/` directory and are bundled via Metro asset `requ
 | Kokoro-82M v1.0 (q8f16) | `models/tts/model_q8f16.onnx` (+ voice bin) | Narration |
 | PaddleOCR v5/v6 | `models/ocr/*.onnx` | Text detection & recognition |
 
-> ⚠️ These model files are large. Because of GitHub's file-size limits, you may want to host them via [Git LFS](https://git-lfs.com) or provide a download script for contributors. Nothing is fetched at runtime by the app itself.
-
 ## 🚀 Getting started
 
 ### Prerequisites
@@ -138,7 +136,3 @@ scripts/         # postinstall Metro/native patch
 ## 🤝 Contributing
 
 Issues and PRs are welcome! Because the AI stack is heavily native, please test on a real device — emulators often lack the RAM/acceleration for on-device inference.
-
-## 📄 License
-
-Released for the open-source community. Add your chosen license (e.g. MIT / Apache-2.0) in a `LICENSE` file before publishing.
