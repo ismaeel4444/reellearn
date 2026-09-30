@@ -31,7 +31,16 @@ yarn-error.*
 *.pem
 
 # local env files
+.env
 .env*.local
+.env.*
+
+# logs
+*.log
+build-log.txt
+
+# AI models & weights
+models/
 
 # typescript
 *.tsbuildinfo

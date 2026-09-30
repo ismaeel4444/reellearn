@@ -4,33 +4,53 @@
     "slug": "ReelLearn",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/reellearn-icon.png",
     "scheme": "reellearn",
-    "userInterfaceStyle": "automatic",
+    "userInterfaceStyle": "dark",
     "ios": {
       "icon": "./assets/expo.icon"
     },
     "android": {
+      "permissions": [
+        "android.permission.WRITE_EXTERNAL_STORAGE"
+      ],
       "adaptiveIcon": {
-        "backgroundColor": "#E6F4FE",
+        "backgroundColor": "#0F1117",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
         "backgroundImage": "./assets/images/android-icon-background.png",
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "com.ismaeel4.ReelLearn"
     },
     "web": {
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
+      "favicon": "./assets/images/reellearn-favicon.png"
     },
     "plugins": [
       "expo-router",
       [
         "expo-splash-screen",
         {
-          "backgroundColor": "#208AEF",
-          "image": "./assets/images/splash-icon.png",
-          "imageWidth": 76
+          "backgroundColor": "#0F1117",
+          "image": "./assets/images/reellearn-splash.png",
+          "imageWidth": 200
+        }
+      ],
+      [
+        "expo-document-picker",
+        {
+          "iCloudContainerName": "reellearn"
+        }
+      ],
+      "expo-sharing",
+      "expo-video",
+      "expo-audio",
+      [
+        "expo-media-library",
+        {
+          "savePhotosPermission": "Save exported reel videos to your gallery",
+          "isAccessMediaLocationEnabled": false
         }
       ]
     ],
